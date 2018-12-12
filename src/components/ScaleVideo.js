@@ -1,5 +1,4 @@
 import React from 'react';
-
 function ScaleVideo(props) {
   return (
       <div>
@@ -15,4 +14,5 @@ function ScaleVideo(props) {
       </div>
   );
 }
+
 export default ScaleVideo;

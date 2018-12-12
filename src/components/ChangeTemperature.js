@@ -1,4 +1,7 @@
 import React from "react";
+import { connect } from 'react-redux';
+import { setTemp} from "../actions";
+
 
 function ChangeTemperature(props){
     return(
@@ -15,3 +18,4 @@ function ChangeTemperature(props){
 }
 
 export default ChangeTemperature;
+

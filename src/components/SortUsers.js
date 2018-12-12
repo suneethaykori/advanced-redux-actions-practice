@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function SortUsers(props) {
   return (
       <div>
@@ -17,4 +18,7 @@ function SortUsers(props) {
       </div>
   );
 }
+
+
 export default SortUsers;
+

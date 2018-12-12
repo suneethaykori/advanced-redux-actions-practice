@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 function Users(props) {
   var usersDivs = null;
@@ -14,6 +15,7 @@ function Users(props) {
     usersDivs = usersDivs.map(function(u){
       return <div>{u.first_name} {u.last_name}</div>
     })
+    console.log(usersDivs)
   }
   return (
       <div>
@@ -22,4 +24,12 @@ function Users(props) {
       </div>
   );
 }
-export default Users;
+function mapStateToProps(state){
+  return{
+    users:state.users,
+    firstNameFilter:state.searchText,
+    sortOn:state.currentUserSort
+  }
+}
+
+export default connect(mapStateToProps)(Users)

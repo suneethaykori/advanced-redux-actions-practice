@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from "react-redux";
+import {setVideoURL} from "../actions";
 
 function VideoTextBox(props) {
   return (
@@ -15,4 +17,8 @@ function VideoTextBox(props) {
       </div>
   );
 }
+
+
 export default VideoTextBox;
+
+

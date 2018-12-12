@@ -1,5 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import { setIsLoading } from "../actions";
+
+
 
 const customStyles = {
   content : {
@@ -29,4 +33,5 @@ function LoadingModal(props) {
     </Modal>
   );
 }
+
 export default LoadingModal;
